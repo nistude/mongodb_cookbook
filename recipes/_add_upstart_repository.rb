@@ -6,4 +6,5 @@ apt_repository "mongodb-upstart" do
   components ["10gen"]
   keyserver "keyserver.ubuntu.com"
   key "7F0CEB10"
+  action :add
 end
