@@ -7,7 +7,7 @@ directory node['mongodb']['dbpath'] do
   recursive true
 end
 
-directory node['mongodb']['logpath'] do
+directory File.dirname node['mongodb']['logpath'] do
   group node['mongodb']['group']
   owner node['mongodb']['user']
   mode '0755'
